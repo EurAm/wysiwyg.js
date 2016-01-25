@@ -5,11 +5,11 @@
             return factory(window, document, $);
         });
     } else if (typeof exports !== 'undefined') {
-        module.exports = factory(window, document, require('jquery'));
+        module.exports = factory(window, document, require('jquery'), require('wysiwyg'));
     } else {
         return factory(window, document, jQuery);
     }
-})(function(window, document, $){
+})(function(window, document, $, wysiwyg){
     'use strict';
 
     // http://stackoverflow.com/questions/17242144/javascript-convert-hsb-hsv-color-to-rgb-accurately
